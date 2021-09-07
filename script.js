@@ -59,3 +59,15 @@ function checkPhone(phone)
 }
 let phone = prompt('Enter the number of phone:');
 console.log(checkPhone(phone));
+//дувятое задание
+let reg;
+function checkEmail(email)
+{
+    
+    reg = RegExp( /^[^@][a-z]{3,10}@[a-z]{1,5}\.(com|ru|net)$/g);
+    
+    let result1 = reg.test(email)
+    return result1;
+}
+let email = prompt('Enter the email:');
+console.log(checkEmail(email));
